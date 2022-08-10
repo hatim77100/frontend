@@ -1,0 +1,38 @@
+/*-------- Le bug des floats --------*/
+
+.container {
+    background: orange;
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
+/*------ Avec container::after on résouds le bug des blocs -----*/
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bloc {
+    width: 100px;
+    height: 100px;
+   
+}
+
+.b1 {
+    background: rgb(6, 122, 78);
+    float: left;
+
+}
+/* 
+p {
+    clear: right;
+} */
+
+.b2 {
+    background: crimson;
+    float: right;
+   
+} 

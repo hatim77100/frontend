@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+}
+
+.btn {
+    outline: 10px solid #333 ;
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: rgb(103, 170, 224);
+    color: #f1f1f1;
+}
+
+button {
+    /* border-top: green;
+    border-bottom: greenyellow;
+    border-left: #333;
+    border-right: #333; */
+    border-radius: 5px solid green;
+    margin: 20px;
+    color: #7e0606;
+}
+
+/*----- Une technique pour centrer les textes --------*/
+
+.btn1 {
+    width: 300px;
+    height: 70px;
+    background: blueviolet;
+    color: #f1f1f1;
+    font-size: 25px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 9999px;
+}
+
+/*-------- Bouton 3D ------------*/
+
+.troisD {
+    margin: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn3d{
+    display: block;
+    color: #18181e;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 30px;
+    background-color: #f5c385;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow:0px 4px rgba(253, 198, 87, 0.75); 
+    border-radius: 10px;
+    /* box-shadow:0px 1px 0px 0px rgba(252,197,84,0.75);     */
+}
+
+.btn3d:hover {
+    box-shadow: 0 2px rgba(252,197,84,0.75);
+    top: 2px;
+    /* transform:translateY(2%); */
+}
+
+.btn3d:active {
+    box-shadow: 0 0px rgba(252,197,84,0.75);
+    top: 4px;
+}
