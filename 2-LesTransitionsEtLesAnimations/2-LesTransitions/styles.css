@@ -1,0 +1,37 @@
+body {
+    background: #333;
+  
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 5rem;
+    background: salmon;
+
+        /* propriété recourcis de: voir au dessous */
+
+    /* transition: transform 500ms ease-in-out 500ms;  */
+
+    /* 
+    on'a:
+    ease-in (vitesse long au début après ça accélère)
+    ease-out (vitesse normal au début après ça ralentis)
+    ease-in-out (long au début et à la fin vitesse normal au milieu)
+    */
+    /* 
+    property
+    duration
+    timing function
+    delay
+    */
+
+    /* transition: transform 3000ms cubic-bezier(.06,.77,.05,.81);  */
+
+}
+
+.box:hover {
+    transition: all 1000ms ease-in-out; 
+    transform: rotate(180deg);
+}
+

@@ -1,0 +1,40 @@
+body {
+    background: #333;
+    /* perspective: 100px;
+    perspective-origin: top left; */
+}
+.box {
+    width: 300px;
+    height: 300px;
+    /* margin: 20px; */
+    background: salmon;
+    /* translate */
+    /* transform: translate(50%, 50%); */
+
+    /* rotate */
+    /* transform: rotate(45deg); */
+    /* scale: agrandir et rétricir */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+
+    /* transform: skew(50deg, 50deg ); */
+
+    /* transform: translateY(100px) rotate(45deg) skew(50deg); */
+
+    /* propriété transform avec l'axe Z: pour l'activer il faut mettre la propriété perspective sur le parent*/
+   /* transform: translate3d(0,0,-500px); */
+
+   /* transform: translate(100px, 100px); */
+
+   transform: rotate(45deg);
+   /* transform-origin: center; */
+   transform-origin: 20px 10px;
+
+}
+
+
+/* .relative {
+    position: relative;
+} */

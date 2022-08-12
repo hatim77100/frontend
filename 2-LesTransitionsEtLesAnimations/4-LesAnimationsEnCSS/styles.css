@@ -1,0 +1,60 @@
+body {
+    background: #333;
+  
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 5rem;
+    background: salmon;
+    /* animation: spin 2s;  */
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* backwards: dès quand arrive à 100% on revient à la valeur de début*/
+    /* forward: il reste sur la dérnière valeur*/
+    /* animation-direction:reverse; */
+
+    /*animation-direction: alternate;*/ /* elle fonction avec la valeur infinit(animation-iteration-count)*/
+    animation-timing-function: ease-in;
+
+    /* toutes les propriétés en haut on peut les mettre dans la propriété animation */
+
+    animation: spin 2s ease-in;
+
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+       
+    }
+    50% {
+        background: lightgreen;
+    }
+    100% {
+        transform: rotate(720deg);
+        background: goldenrod;
+    }
+
+
+   /* 2ème méthode */
+   
+/*    
+   from {
+        transform: rotate(0deg);
+       
+    }
+
+    to {
+        transform: rotate(720deg);
+        background: goldenrod;
+    }     */
+
+}
+
+/* .box:hover {
+    animation: spin 2s;    
+} */
