@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    margin: 5rem;
+    width: 500px;
+    /* clip-path:  circle(30%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
