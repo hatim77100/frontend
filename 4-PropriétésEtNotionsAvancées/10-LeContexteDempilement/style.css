@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+    width: 250px;
+    height: 75px;
+    margin: 5px;
+    background: crimson;
+    position: relative;
+    /* transform: rotate(45deg); */
+}
+
+.element1 {
+    background: crimson;
+}
+.element2 {
+    background: lightblue;
+    top: -50px;
+    left: 50px;
+}
+.element3 {
+    background: yellowgreen;
+    top: -100px;
+    left: 100px;
+}
