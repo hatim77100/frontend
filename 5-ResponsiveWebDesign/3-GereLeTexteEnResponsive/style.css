@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    font-size: 10px;
+}
+
+main h1 {
+    font-size: 4em;  /* c'est 40px par rapport au parent = 4 * 10px */
+    text-align: center;
+    color: crimson;
+}
+
+main p {
+    font-size: 2em;
+}
+
+main button {
+    padding: 1em;
+}
+
+
+
+@media (max-width: 600px){
+    main{
+        font-size: 7px;
+    }
+}

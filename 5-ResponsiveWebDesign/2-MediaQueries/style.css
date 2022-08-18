@@ -1,0 +1,33 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: crimson;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media print {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media speech {
+    h1 {
+        font-size: 30px;
+    }
+}
