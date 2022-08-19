@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: blueviolet;
+  display: flex;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  /* flex-basis= width 150px; Permet de servir à une propriété raccourci flex =(grow0 shrink1 et basis150px)*/
+  /* flex-grow: 0; il partage l'espace equitablement grossir et rétricir ensemble*/
+  /* flex-grow: 1; */
+}
+.item1 {
+  background: salmon;
+  /* flex-shrink: 1;  de base les items sont sur 1 */
+  /* flex-grow: 1; */
+}
+.item2 {
+  background: greenyellow;
+  /* flex-grow: 2; il grandit plus que les autres au fûr et à mesure qu'on agrandit la fenêtre */
+  /* flex-shrink: 1; */
+}
+.item3 {
+  background: gainsboro;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+}
