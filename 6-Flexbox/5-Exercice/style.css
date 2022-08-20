@@ -49,7 +49,7 @@ body {
 } */
 
 /* Exemple #2 */
-
+/* 
 .containerB {
     width: 800px;
     height: 500px;
@@ -60,7 +60,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* align-content: center; */
+
 }
 
 .itemB {
@@ -68,30 +68,35 @@ body {
     height: 150px;
     background: crimson;
     margin: 5px;
-    /* flex-wrap: wrap; */
+    
 }
 
-.b1 {
+
+.b3 {
+    width: 96.1%;
+} */
+
+/* .b1 {
     order: 1;
-    /* margin: auto; */
+    
 }
 .b2 {
     order: 2;
     width: 770px;
-    /* margin: auto; */
+    
 }
 .b3 {
-    order: 4;
-    /* margin: auto; */
+    order: 1;
+    
 }
 .b4 {
     order: 3;
-    /* margin: auto; */
+   
 }
 .b5 {
-    orphans: 4;
-    /* margin: auto; */
-}
+    order: 3;
+  
+} */
 
   /* Exemple #3 */
 
@@ -102,10 +107,18 @@ body {
     background: midnightblue;
     flex-shrink: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
-
+.itemC {
+    width: 50%;
+    height: 60px;
+    margin: 10px;
+    background: crimson;
+}
 
 
   /* Exemple #4 */
