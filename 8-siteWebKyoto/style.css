@@ -6,8 +6,7 @@
 body {
     font-family: Nunito sans, sans-serif;
 }
-/* --- Navigation -----*/
-
+/* ------------- Navigation -------------*/
 nav {
     position: fixed;
     height: 70px;
@@ -32,13 +31,11 @@ nav {
     list-style-type: none;  
      z-index: 20;
 }
-
 .item-nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .item-nav a {
     font-size: 22px;
     text-decoration: none;
@@ -78,4 +75,220 @@ nav {
         justify-content: center;
     }
 }
-    
+
+/* --------- Accueil ----------*/
+.accueil {
+   width: 100%; 
+   height: 100vh;
+   min-height: 970px;
+   background-image: url(./img/accueil-pic-lum-down.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-bottom: 1px dotted #777 ;
+   padding-top: 1px;
+}
+.logo-kyoto {
+    border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin: 189px auto 0;
+}
+.accueil h1 {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0 0 10px #000;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-family: Merienda one, sans-serif;
+}
+.sous-titre {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin: 5px 0;
+    text-shadow: 0 0 10px #000;
+}
+.btn-accueil {
+    border-radius: 9999px;
+    background: crimson;
+    border: 1px solid #333;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    margin: 30px auto 0;
+    transition: all 0.2s ease-in-out;
+}
+.btn-accueil:hover {
+    background: rgb(177, 0, 36);
+    color: #fff;
+}
+
+@media  screen and (max-width: 850px) {
+    .accueil {
+        height: 650px;
+        min-height: auto;
+        background-position: right;
+    }
+    .logo-kyoto {
+        margin: 120px auto 0;
+    }
+    .accueil h1 {
+        font-size: 60px;
+    }
+    .sous-titre {
+        font-size: 23px;
+    }
+    .btn-accueil {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: 15px auto 0;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .accueil {
+        height: 550px;
+        background-position: right;
+    }
+    .logo-kyoto {
+        width: 150px;
+        margin: 110px auto 0;
+    }
+    .accueil h1 {
+        font-size: 35px;
+    }
+    .sous-titre {
+        font-size: 20px;
+    }
+    .btn-accueil {
+        width: 130px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .logo-menu {
+        top: 15px;
+        width: 40px;
+    }
+}
+
+/* ------ Section asymétrique ------*/
+.section-asymetrique {
+    display: grid;
+    grid-template: 200px repeat(3, auto)/ 1fr 600px 1fr;
+    background: #f1f1f1;
+}
+.section-asymetrique h2 {
+    grid-area: 1/1/2/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+/* Placement des eléments */
+.bloc-1, .img-grid-1 {
+    grid-area: 2/2/3/3;
+}
+.bloc-right, .img-grid-2 {
+    /* deb row deb col fin row fin col */
+    grid-area: 3/2/4/3;
+}
+.bloc-3, .img-grid-3 {
+    grid-area: 4/2/5/3;
+}
+.bloc {
+    background: #333;
+    color: #f1f1f1;
+    position: relative;
+    border-radius: 2px;
+    height: 750px;
+    margin-bottom: 250px;
+}
+.img-grid{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+.img-grid-1, .img-grid-3{
+    top: 130px;
+    left: 20px;
+}
+
+.bloc-left {
+    left: -300px;
+}
+.bloc-text-left {
+    width: 50%;
+    height: 100%;
+}
+.bloc-text-left h3 {
+    white-space: nowrap;
+    font-size: 35px;
+    margin: 30px 15px;
+}
+.bloc-text-left p {
+    line-height: 40px;
+    padding: 15px;
+} 
+.bloc button {
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    background: crimson;
+    border: 1px solid #333;
+    color: #f1f1f1;
+    padding: 20px 35px;
+    font-size: 20px;
+    margin: 35px auto;
+    cursor: pointer;
+    display: block;
+}
+.bloc-right {
+    right: -300px;
+}
+.img-grid-2 {
+    top: 130px;
+    left: 100px;
+}
+.bloc-text-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+} 
+.bloc-text-right h3 {
+    position: relative;
+    font-size: 35px;
+    margin: 30px auto;
+}
+.bloc-text-right p{
+    line-height: 40px;
+    padding: 15px;
+}
+.bloc-text-right button {
+    margin: 0 auto;
+}
+
+/* ---- Lignes verticales ----*/
+.ligne-gauche {
+    grid-area: 1/2/-1/3;
+    border-left: 1px solid #333;
+}
+.ligne-droite {
+    grid-area: 1/3/-1/4;
+    border-left: 1px solid #333;
+}
