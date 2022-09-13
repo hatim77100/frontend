@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>formulaire</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- <input type="month" />
+      <input type="number" min="0" max="100" step="10" />
+      <input type="range" min="0" max="100" id="rangeInp" />
+      <button>Envoyer</button> -->
+      <!-- <input type="submit" value="Hello"> -->
+      <label for="monInpTxt">Renseigner votre nom</label>
+      <input type="text" id="monInpTxt" name="nom" placeholder="Votre nom"/>
+      <br /><br />
+      
+      <textarea id="" cols="30" rows="10"></textarea>
+      <br><br>
+      <select id="">
+        <option value="fraise">Fraise</option>
+        <option value="carotte">Carotte</option>
+        <option value="tomate" selected>Tomate</option>
+        <optgroup label="Fruits Rouges">
+            <option value="">Groseille</option>
+            <option value="">Mûre</option>
+            <option value="">Cerise</option>
+        </optgroup>
+      </select>
+      <br> <br>
+      <label for="fruits">Quel est votre fruit préféré</label>
+      <input type="text" id="fruits" list="suggestion">
+      <datalist id="suggestion">
+        <option value="pomme"></option>
+        <option value="fraise"></option>
+        <option value="mangue"></option>
+        <option value="banane"></option>
+      </datalist>
+      <br> <br>
+      <label for="accord">Vous êtes d'accord ?</label>
+      <input type="checkbox" id="accord" checked name="accord" value="accord">
+      <br> <br>
+        <p>Votre couleur préférée ?</p>
+        <label for="rouge">Rouge</label>
+        <input type="radio" id="rouge" name="couleur" value="rouge">
+        <label for="Jaune">Jaune</label>
+        <input type="radio" id="rouge" name="couleur" value="Jaune">
+        <label for="Vert">Vert</label>
+        <input type="radio" id="rouge" name="couleur" value="Vert">
+        <br> <br>
+       <input type="color" name="" id="">
+
+        <br> <br>
+      <button>Envoyer</button>
+    </form>
+    <p id="resultat"></p>
+    <script>
+      let resultat = document.getElementById("resultat");
+      let rangeInp = document.getElementById("rangeInp");
+      rangeInp.oninput = function () {
+        resultat.textContent = rangeInp.value;
+      };
+    </script>
+  </body>
+</html>
