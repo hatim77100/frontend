@@ -1,0 +1,63 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contGlobal {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ----Gauche------ */
+
+.panneauGauche {
+    flex: 1 1 33.333%;
+    padding: 25px;
+}
+.panneauGauche h1 {
+    color: #8b97d7;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.panneauGauche h1 strong {
+    color: #5260ad;
+    font-weight: 600;
+}
+.formBloc h3 {
+    color: #666;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 45px;
+}
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+.formBloc .formGroupe input {
+   display: block;
+   width: 100%;
+   padding: 10px 0px; 
+   border: none;
+   outline: none;
+   background: none;
+   border-bottom: 3px solid #aaa;
+   color: #666;
+   font-size: 20px;
+   transition: 0.4s ease-out;
+}
