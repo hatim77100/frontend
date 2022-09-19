@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carte de credit</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contMontant">
+        <p>1 <strong>Mug blanc</strong> : 5€</p>
+      </div>
+      <form>
+        <div class="inpFull">
+          <label for="nom">Titulaire</label>
+          <input
+            type="text"
+            id="nom"
+            name="titulaire"
+            required
+            maxlength="30"
+            placeholder="Entrer le titulaire de la carte"
+          />
+        </div>
+        <div class="inpFull">
+            <label for="num">Numéros</label>
+            <input type="text" id="num" name="numero" required placeholder="8888-8888-8888-8888" pattern="[0-9]+">
+        </div>
+        <div class="contExSecu">
+            <div class="inpExp">
+                <label for="expiration">Expiration</label>
+                <select name="moisexp" id="expiration" class="select1">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span>
+                    <select name="anexp" class="select2">
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                     </select>
+                </span>
+            </div>
+            <div class="inpSecu">
+                <label for="crypto">Cryptogramme</label>
+                <input type="text" name="crypto" id="crypto" required maxlength="3" placeholder="XXX">
+            </div>
+        </div>
+        <div class="contBtn">
+            <button>Confirmer et payer</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
