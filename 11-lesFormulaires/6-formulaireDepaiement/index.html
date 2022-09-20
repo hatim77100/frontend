@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Carte de credit</title>
   </head>
@@ -26,7 +27,7 @@
         </div>
         <div class="inpFull">
             <label for="num">Numéros</label>
-            <input type="text" id="num" name="numero" required placeholder="8888-8888-8888-8888" pattern="[0-9]+">
+            <input type="text" id="num" name="numero" required placeholder="8888-8888-8888-8888" pattern="[0-9\s]+" maxlength="19">
         </div>
         <div class="contExSecu">
             <div class="inpExp">
@@ -47,7 +48,7 @@
                 </select>
                 <span>
                     <select name="anexp" class="select2">
-                        <option value="2022">2022</option>
+                        <option value="2022">/ 2022</option>
                         <option value="2023">2023</option>
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
@@ -62,7 +63,7 @@
             </div>
             <div class="inpSecu">
                 <label for="crypto">Cryptogramme</label>
-                <input type="text" name="crypto" id="crypto" required maxlength="3" placeholder="XXX">
+                <input type="text" name="crypto" id="crypto" required maxlength="3" placeholder="XXX" pattern="[0-9]{3}">
             </div>
         </div>
         <div class="contBtn">
